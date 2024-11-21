@@ -6,16 +6,9 @@ This is an AHK v2 script aims to provide aid in clinical psychiatric work.
 
 ** How To Start
 
-Creat two files inside the folder =userspace=:
-1. custom.ahk
-2. api.txt
-
-*** custom.ahk
-
-Add your personal autohotkey script here.
-
-*** api.txt
-
-paste your openai api here.
+- Create two files inside the folder =userspace=:
+  1. =custom.ahk= (for your personal AHK script.)
+  2. =api.txt= (paste your openai api here)
+- Run =main.ahk=
 
    
