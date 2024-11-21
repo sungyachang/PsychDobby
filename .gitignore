@@ -1,0 +1,4 @@
+*__ignore/
+userspace/*
+!userspace/.gitkeep
+System Volume Information/

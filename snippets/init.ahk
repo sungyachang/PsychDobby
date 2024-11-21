@@ -1,0 +1,5 @@
+#Include "%A_ScriptDir%\snippets\snippets--date_&_time.ahk"
+#Include "%A_ScriptDir%\snippets\snippets--medical_abbreviations.ahk"
+#Include "%A_ScriptDir%\snippets\snippets--medical_medications.ahk"
+#Include "%A_ScriptDir%\snippets\snippets--medical_records.ahk"
+#Include "%A_ScriptDir%\snippets\snippets--special_characters.ahk"

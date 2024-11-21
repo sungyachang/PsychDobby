@@ -1,0 +1,8 @@
+* PsychDobby
+
+#+html: <p align="center"><img src="./assets/PsychDobby.webp" /></p>
+
+** API
+
+Create =api.txt=, and paste your api directly inside.
+
