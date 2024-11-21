@@ -1,8 +1,21 @@
 * PsychDobby
 
+This is an AHK v2 script aims to provide aid in clinical psychiatric work.
+
 #+html: <p align="center"><img src="./assets/PsychDobby.webp" /></p>
 
-** API
+** How To Start
 
-Create =api.txt=, and paste your api directly inside.
+Creat two files inside the folder =userspace=:
+1. custom.ahk
+2. api.txt
 
+*** custom.ahk
+
+Add your personal autohotkey script here.
+
+*** api.txt
+
+paste your openai api here.
+
+   
