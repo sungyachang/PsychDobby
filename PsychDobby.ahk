@@ -1,7 +1,7 @@
 #Requires AutoHotkey v2.0
 #SingleInstance
 
-A_IconTip := "PsychDobby v0.1.0"
+A_IconTip := "PsychDobby v0.2.0"
 
 TraySetIcon("assets\favicon-elf.ico")
 
