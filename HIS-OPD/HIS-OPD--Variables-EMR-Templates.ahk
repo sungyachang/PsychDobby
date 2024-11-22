@@ -21,35 +21,22 @@ Education:
 - 家人和學校的關係： 友善／支持、衝突／有敵意
 - Complementary education: nil
 
+Psychiatric family history:
+
 Family structure and interaction:
 - lives with:
 - father:
 - mother:
-- grandfather:
-- grandmother:
 - parenting style:
     - father: authoritative/authoritarian/permissive/uninvolved parenting
     - mother: authoritative/authoritarian/permissive/uninvolved parenting
 
-Psychiatric family history:
 
-Birth:
-  - GA: full term
-  - NSD/CS
-  - BBW: gm
-  - no overt perinatal complication, DOIC 延遲初啼 (-), PROM 早期破水 (-), head injury(-), epilepsy(-)
-  - Maternal history: GDM(-), pre-eclampsia(-), Hypertension(-)
-  - Vaccination: as schedule
+Birth Histroy: unremarkable
 
 Development
-- Language Development:
-    - first single words: not delayed (9-12m)
-    - simple sentence: not delayed (14-22m)
-- Motor Development:
-    - crawling: not delayed (7-10m)
-    - stand: not delayed (9-12m)
-    - first walked unaided: not delayed (11-13m)
-    - up and down stairs: not delayed (14-20m)
+- Language Development: Not Delayed
+- Motor Development: Not Delayed
 
 Medical history:
 - Systemic disease: denied
@@ -73,8 +60,6 @@ SOAP_S[3] := "
 病人主訴：
 
 現在病史：
-
-The years old male/female suffers from
 
 - 婚姻及感情狀況 已/未婚
 - 現在家庭成員 和 先生/太太、個兒子、個女兒 一起住
@@ -108,8 +93,6 @@ Homicidal history(-)
 目前用藥：
 藥物過敏史：No drug allergy history
 旅遊史：No travelling abroad for one year 
-
-飲食：not vegetarian/奶蛋素/全素
 )"
 
 
@@ -124,9 +107,6 @@ Homicidal history(-)
 SOAP_O := Map()
 SOAP_O[1] := "
 (
-身高： cm
-體重： kg
-
 pain score = 0/10
 
 [MSE]
@@ -219,7 +199,8 @@ Homicidal Risk:
 SOAP_AP := Map()
 SOAP_AP[1] := "
 (
-
+Impression:
+- 
 
 Plan:
 - PDI + PPFE
@@ -232,7 +213,8 @@ SOAP_AP[2] := SOAP_AP[1]
 
 SOAP_AP[3] := "
 (
-
+Impression:
+- 
 
 Plan:
 - PDI + PPFE

@@ -1,12 +1,39 @@
 #Requires AutoHotkey v2.0
 #SingleInstance
 
+;-------------------------------------------------------------------------------
+;-- Tray 
+;-------------------------------------------------------------------------------
+
 A_IconTip := "PsychDobby v0.2.0"
 
 TraySetIcon("assets\favicon-elf.ico")
 
+A_TrayMenu.Delete
+A_TrayMenu.Add("&About", AboutPsychDobby)
+A_TrayMenu.Add()
+A_TrayMenu.Add("&Reload Script", ReloadScript)
+A_TrayMenu.Add()
+A_TrayMenu.Add("&Exit", Exit)
+
+AboutPsychDobby(*) {
+	Run "https://github.com/sungyachang/PsychDobby"
+}
+
+ReloadScript(*) {
+	Reload
+}
+
+Exit(*) {
+	ExitApp
+}
+
+
+;-------------------------------------------------------------------------------
+
 CoordMode "Mouse", "Screen" ; mouse location's reference point is the top left corner of "the entire screen" instead of the window.
 
+;-------------------------------------------------------------------------------
 
 ^F5::reload
 ^F4::ExitApp
