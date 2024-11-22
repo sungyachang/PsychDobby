@@ -7,8 +7,8 @@ This is an AHK v2 script that aims to provide aid in clinical psychiatric work.
 ** How To Start
 
 - Create two files inside the folder =userspace= (files inside this folder will be safely ignored by git):
-  1. =custom.ahk= (for your personal AHK script.)
+  1. =custom.ahk= (for your personal AHK script. See =custom-example.ahk= for default hotkeys for reference)
   2. =api.txt= (paste your openai api here)
-- Run =main.ahk=
+- Run =PsychDobby.ahk=
 
    

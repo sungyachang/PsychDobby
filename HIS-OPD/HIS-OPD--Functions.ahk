@@ -17,11 +17,11 @@ NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_Code) {
 
 
 
+/*
 GetPatientAge() {
 return 5 
 }
-
-/*
+*/
 
 GetPatientAge() {
 ; get the patient's age
@@ -57,8 +57,6 @@ GetPatientAge() {
 
 }
 
-*/
-
 GetAgeGroup(Age)
 {
 ; Get Patient's Age Group from Age, <6y=1, 6-15y=2, >15y=3
@@ -77,15 +75,42 @@ CleanUpPsychotherapyRecord()
 ;; automatically prune previous psychotherapy record from the AP input box.
 	MouseMove SOAP_AP_x, SOAP_AP_y
 	MouseClick "left"
+    Sleep 300
 	Send "^a"
 	Send "^c"
 	if !ClipWait(2) {
 		MsgBox "The attempt to copy text onto the clipboard failed."
 		return
 	}
+    Sleep 300
 	Note := A_Clipboard
 	Note := RegExReplace(Note, "s)^(.*?---).*", "$1") ; s) enables DotAll mode so that . matches newline characters as well.
+    Sleep 300
 	A_Clipboard := Note
+    Sleep 300
 	Send "^a"
 	Send "^v"
+    Send "{Enter 2}"
+}
+
+
+StableConditionAskedForRefill()
+{
+    
+    ;; Paste EMR Templates
+    MouseMove SOAP_S_x, SOAP_S_y
+    MouseClick "left"
+    Send "{PgDn 4}{End}{Enter 2}"
+        Sleep 300
+    A_Clipboard := FormatTime(,  "yyyyMMdd") . " Stable Condition, asked for refill"
+        Sleep 300
+        Send "^v"
+
+    MouseMove SOAP_O_x, SOAP_O_y
+    MouseClick "left"
+    Send "{PgDn 4}{End}{Enter 2}"
+        Sleep 300
+    A_Clipboard := FormatTime(,  "yyyyMMdd") . " Stationary"
+        Sleep 300
+        Send "^v"
 }
