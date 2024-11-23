@@ -7,22 +7,18 @@ FirstVisit(*) {
 
 	;; Enter NHI Code
 	NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_PDI[PTAgeGroup])
-        Sleep 1000
 	NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_PPFE[PTAgeGroup])
-        Sleep 1000
 
 	;; Paste EMR Templates
 	MouseMove SOAP_S_x, SOAP_S_y
 	MouseClick "left"
-	; SendText SOAP_S[PTAgeGroup]
         Sleep 400
-	A_Clipboard := SOAP_S[PTAgeGroup]
+	A_Clipboard := FormatTime(,  "yyyyMMdd") . " 初診`n`n" . SOAP_S[PTAgeGroup]
         Sleep 400
         Send "^v"
 
 	MouseMove SOAP_O_x, SOAP_O_y
 	MouseClick "left"
-	; SendText SOAP_O[PTAgeGroup]
         Sleep 400
 	A_Clipboard := SOAP_O[PTAgeGroup]
         Sleep 400
@@ -30,7 +26,6 @@ FirstVisit(*) {
 
 	MouseMove SOAP_AP_x, SOAP_AP_y
 	MouseClick "left"
-	; SendText SOAP_AP[PTAgeGroup]
         Sleep 400
 	A_Clipboard := SOAP_AP[PTAgeGroup]
         Sleep 400
@@ -56,22 +51,20 @@ Reeducative(*) {
 
 	;; Enter NHI Code
 	NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_Re[PTAgeGroup])
-        Sleep 1000
 
-    CleanUpPsychotherapyRecord()
-        Sleep 1000
+	CleanUpPsychotherapyRecord()
+	Sleep 1000
 
 	MouseMove SOAP_S_x, SOAP_S_y
 	MouseClick "left"
-    Send "^a"
-    ReeducativePsychTherapy()
+	Send "^a"
+	ReeducativePsychTherapy()
 
-    ;; Sleep 6000
 
 	MouseMove SOAP_AP_x, SOAP_AP_y
 	MouseClick "left"
-    Send "{PgDn 4}{End}"
-    Send "^v"
+	Send "{PgDn 4}{End}"
+	Send "^v"
 
 
 
@@ -86,7 +79,6 @@ Intensive(*) {
 
 	;; Enter NHI Code
 	NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_Intensive[PTAgeGroup])
-        Sleep 1000
 }
 
 
@@ -99,7 +91,6 @@ PPFE(*) {
 
 	;; Enter NHI Code
 	NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_PPFE[PTAgeGroup])
-        Sleep 1000
 
 }
 

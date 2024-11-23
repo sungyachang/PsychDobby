@@ -1,4 +1,4 @@
-ProseEdit_Prompt := "You are a prose editor. Rewrite the following text to be more professional. \n Text: \n"
+ProseEdit_Prompt := "As an expert prose editor, rewrite the following text after triple quotes to be more professional. Avoid any text formatting such as bold or italics.\n===\n"
 ProseEdit_API_Model := "gpt-4o"
 ProseEdit_Response_Method := "Replace"
 
@@ -11,7 +11,8 @@ ProseEdit(*) {
 }
 
 
-EMREdit_Prompt := "You are an professional american psychiatrist. the following is part of the Subject part of an Outpatient clinic EMR. Correct any grammer mistake, re-write it to make it more profession. Only provide the improved EMR, do not give comment. \n EMR: \n "
+
+EMREdit_Prompt := "The following text after the triple quotes is a part of a psychiatric outpatient medical record. As an expert american psychiatrist, provide modifications in grammer, working and phrasing to make it more professional. Avoid any text formatting such as bold or italics.\n===\n"
 EMREdit_API_Model := "gpt-4o"
 EMREdit_Response_Method := "Replace"
 

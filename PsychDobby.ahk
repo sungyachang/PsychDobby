@@ -5,7 +5,7 @@
 ;-- Tray 
 ;-------------------------------------------------------------------------------
 
-A_IconTip := "PsychDobby v0.2.0"
+A_IconTip := "PsychDobby"
 
 TraySetIcon("assets\favicon-elf.ico")
 
