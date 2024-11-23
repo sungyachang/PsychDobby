@@ -1,5 +1,5 @@
 ﻿/*
-:*?:DN-form,,::
+:*?:DN-form''::
 {
 	SendText "
 (
@@ -26,7 +26,7 @@ Send "{End}"
 */
 
 
-:*?:DN-form,,::
+:*?:DN-form''::
 {
 SendText "
 (
@@ -54,7 +54,7 @@ Send "{End}"
 
 
 
-:*?:completePE,,::
+:*?:completePE''::
 {
 	SendText "
 ( 
@@ -79,7 +79,7 @@ Physical Examinations:
 
 
 
-:*?:MSE-form,,::
+:*?:MSE-form''::
 {
 	SendText "
 ( 
@@ -106,7 +106,7 @@ Send "^{Right}"
 
 
 
-:*?:MSE-ex,,::
+:*?:MSE-ex''::
 {
 	SendText "
 ( 
@@ -160,7 +160,7 @@ Send "^{Right}"
 }
 
 
-:*?:v/s,,::
+:*?:v/s''::
 {
 	SendText "
 ( 
@@ -176,7 +176,7 @@ Send "{Up 5}{Right 3}"
 }
 
 
-:*?:write,,::
+:*?:write''::
 {
 	SendText "
 ( 
@@ -226,7 +226,7 @@ Send "{Up 38}{Down}"
 
 
 
-:*?:Past-History,,::
+:*?:Past-History''::
 {
 	SendText "
 ( 
