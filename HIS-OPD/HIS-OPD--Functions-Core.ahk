@@ -36,7 +36,7 @@ GetPatientAge() {
   MouseClick "left"
   MouseClick "left"
   MouseClick "left"
-  Sleep 500
+  Sleep 800
   Send "^c"
   if !ClipWait(2) {
   MsgBox "The attempt to copy text onto the clipboard failed."
@@ -94,7 +94,7 @@ CleanUpPsychotherapyRecord()
 }
 
 
-StableConditionAskedForRefill()
+StableConditionAskedForRefill(*)
 {
     
     ;; Paste EMR Templates

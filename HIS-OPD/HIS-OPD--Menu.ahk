@@ -1,6 +1,7 @@
 HISOPDMenu := Menu()
 
 HISOPDMenu.Add("&F - 初診", FirstVisit)
+HISOPDMenu.Add("&K - Refill (Keep)", StableConditionAskedForRefill)
 
 HISOPDMenu.Add()
 
@@ -13,4 +14,9 @@ HISOPDMenu.Add()
 HISOPDMenu.Add("&P - PPFE", PPFE)
 
 HISOPDMenu.Add()
+
 HISOPDMenu.Add("&O - Social Function", SocialFunctionAssess)
+
+HISOPDMenu.Add()
+
+HISOPDMenu.Add("&E - EMR Edit", EMREdit)

@@ -12,7 +12,7 @@ TraySetIcon("assets\favicon-elf.ico")
 A_TrayMenu.Delete
 A_TrayMenu.Add("&About", AboutPsychDobby)
 A_TrayMenu.Add()
-A_TrayMenu.Add("&Reload Script", ReloadScript)
+A_TrayMenu.Add("&Reload", ReloadScript)
 A_TrayMenu.Add()
 A_TrayMenu.Add("&Exit", Exit)
 
