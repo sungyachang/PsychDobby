@@ -1,6 +1,20 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;; Core Modules
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;atientAge() {
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_Code) {
+
+    MouseGetPos &xpos, &ypos ; remember current location
+
+    MouseMove NHI_InputLocation_x, NHI_InputLocation_y
+    MouseClick "left"
+    SendText NHI_Code
+    Send "{Enter}"
+
+    MouseMove xpos, ypos ; return to previous location
+}
+
+GetPatientAge() {
 ; get the patient's age
 
 	; return 18 ;; for testing purpose
