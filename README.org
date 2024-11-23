@@ -11,4 +11,10 @@ This is an AHK v2 script that aims to provide aid in clinical psychiatric work.
   2. =api.txt= (paste your openai api here)
 - Run =PsychDobby.ahk=
 
+* TODOs
+
+- Complete documentations
+  - Snippet usage
+  - Functions index
+  - Examples on custom scripts
    
