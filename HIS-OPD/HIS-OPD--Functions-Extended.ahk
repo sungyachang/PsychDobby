@@ -52,22 +52,6 @@ Reeducative(*) {
 	;; Enter NHI Code
 	NHI_Input(NHI_InputLocation_x, NHI_InputLocation_y, NHI_Re[PTAgeGroup])
 
-	CleanUpPsychotherapyRecord()
-	Sleep 1000
-
-	MouseMove SOAP_S_x, SOAP_S_y
-	MouseClick "left"
-	Send "^a"
-	ReeducativePsychTherapy()
-
-
-	MouseMove SOAP_AP_x, SOAP_AP_y
-	MouseClick "left"
-	Send "{PgDn 4}{End}"
-	Send "^v"
-
-
-
 }
 
 Intensive(*) {
@@ -83,7 +67,6 @@ Intensive(*) {
 
 
 PPFE(*) {
-
 	;; Get the patient's Age Group
 	PTAge := GetPatientAge()
 	PTAgeGroup := GetAgeGroup(PTAge)
